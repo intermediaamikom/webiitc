@@ -7,6 +7,8 @@ import { MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { StatusPayment } from "../team";
+import Cookies from "js-cookie";
+import { useRouter } from "next/router";
 
 const DashboardAdmin = () => {
   const paymentStatusFilters = [
@@ -17,6 +19,7 @@ const DashboardAdmin = () => {
     { label: "Gagal Bayar", value: "INVALID" },
   ];
 
+  const router = useRouter();
   const [teams, setTeams] = useState([]);
   const [originalTeams, setOriginalTeams] = useState([]);
   const [selectedCompetitionNames, setSelectedCompetitionNames] = useState([]);
@@ -24,6 +27,13 @@ const DashboardAdmin = () => {
     paymentStatusFilters[0].value
   );
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const token = Cookies.get("adminKey");
+    if(!token){
+      router.push("/admin");
+    }
+  }, [])
 
   useEffect(() => {
     fetchTeams();
@@ -99,7 +109,7 @@ const DashboardAdmin = () => {
                 onClick={() => setCurrentPaymentStatus(filter.value)}
                 className={`flex  cursor-pointer items-center justify-between rounded-lg border text-xs w-full ${
                   currentPaymentStatus === filter.value
-                    ? "border-orange-500 ring-1 ring-orange-500"
+                    ? "border-brown ring-1 ring-brown"
                     : "border-gray-100"
                 } bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200`}
               >
@@ -107,7 +117,7 @@ const DashboardAdmin = () => {
                   <svg
                     className={
                       currentPaymentStatus === filter.value
-                        ? "h-5 w-5 text-orange-600"
+                        ? "h-5 w-5 text-brown"
                         : "hidden"
                     }
                     xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +144,7 @@ const DashboardAdmin = () => {
                 onClick={() => toggleCompetitionFilter(competitionName)}
                 className={`flex cursor-pointer items-center justify-between rounded-lg border w-full ${
                   selectedCompetitionNames?.includes(competitionName)
-                    ? "border-orange-500 ring-1 ring-orange-500"
+                    ? "border-brown ring-1 ring-brown"
                     : "border-gray-100"
                 } bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200`}
               >
@@ -142,7 +152,7 @@ const DashboardAdmin = () => {
                   <svg
                     className={
                       selectedCompetitionNames?.includes(competitionName)
-                        ? "h-5 w-5 text-orange-600"
+                        ? "h-5 w-5 text-brown"
                         : "hidden"
                     }
                     xmlns="http://www.w3.org/2000/svg"

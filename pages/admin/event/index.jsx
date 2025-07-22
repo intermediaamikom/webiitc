@@ -124,7 +124,7 @@ const Event = () => {
           <h1 className="text-xl font-bold">Daftar Acara</h1>
           <button
             onClick={() => setShowCreateModal(true)}
-            className="bg-orange-500 text-white px-4 py-2 rounded"
+            className="bg-brown text-white px-4 py-2 rounded"
           >
             Buat Acara
           </button>

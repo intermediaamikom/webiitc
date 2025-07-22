@@ -31,23 +31,23 @@ const Footer = () => {
     <footer className="bg-slate-800">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center  gap-3   ">
-          <div className="bg-white flex justify-center items-center rounded-full p-2 ">
+          <div className="bg-white flex justify-center items-center rounded-full w-[60px] h-[60px]">
             <Image
               src="/images/LOGO/amikom.png"
               alt="logo footer"
-              width={10}
-              height={10}
+              width={20}
+              height={20}
               priority
               className="w-10 p-2 object-contain "
             />
           </div>
-          <div className="bg-white flex justify-center items-center rounded-full p-2 ">
+          <div className="bg-white flex justify-center items-center rounded-full w-[60px] h-[60px]">
             <Image
-              src="/images/LOGO/LOGOFIX2024.png"
+              src="/images/LOGO/logofix2025.png"
               alt="logo footer"
-              className="w-10 p-2 object-contain"
-              width={10}
-              height={10}
+              className="w-full"
+              width={20}
+              height={20}
               priority
             />
           </div>

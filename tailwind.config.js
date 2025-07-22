@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         oren: "#F37F00",
+        brown: "#E9A319",
         kuning: "#F7D708",
         softyellow: "#EACB05",
         dark: "#505050",

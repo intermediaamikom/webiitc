@@ -8,6 +8,8 @@ import { StatusPayment } from "../team";
 import { BiCheckCircle } from "react-icons/bi";
 import PaymentValidationApi from "@/api/payment/PaymentValidation";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import Cookies from "js-cookie";
+
 
 const TeamDetailAdmin = () => {
   const router = useRouter();
@@ -19,6 +21,14 @@ const TeamDetailAdmin = () => {
   const [reason, setReason] = useState("");
   const [image, setImage] = useState("");
   const id = router.query.i;
+
+  useEffect(() => {
+    const token = Cookies.get("adminKey");
+    if(!token){
+      router.push("/admin");
+    }
+  }, []);
+
   useEffect(() => {
     GetDetailTeamAdminApi({ id }).then((res) => {
       // console.log(res);

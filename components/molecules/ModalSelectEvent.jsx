@@ -16,7 +16,7 @@ const ModalSelectEvent = ({ title, children, onClose, onConfirm }) => {
           </button>
           <button
             onClick={onConfirm}
-            className="bg-orange-500 text-white px-4 py-2 rounded-md"
+            className="bg-brown text-white px-4 py-2 rounded-md"
           >
             Yakin
           </button>

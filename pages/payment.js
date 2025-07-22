@@ -221,12 +221,12 @@ const Payment = () => {
         </ul>
         <FileInput
           placeholder="Upload bukti pembayaran"
-          className="bg-white rounded-xl border border-oren text-center "
+          className="bg-white rounded-xl border border-brown text-center "
           image={image}
           setImage={setImage}
         />
 
-        <Button isSquare additionals={"w-full"} size={"md"} color={"oren"}>
+        <Button isSquare additionals={"w-full"} size={"md"} color={"brown"}>
           {isHitPay ? (
             <AiOutlineLoading3Quarters className="text-xl mx-auto text-white animate-spin" />
           ) : (

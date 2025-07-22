@@ -124,7 +124,7 @@ export default function Teams() {
                   onClick={() => setselectedSubmission(filter.value)}
                   className={`flex  cursor-pointer items-center justify-between rounded-lg border text-xs w-full ${
                     selectedSubmission === filter.value
-                      ? "border-orange-500 ring-1 ring-orange-500"
+                      ? "border-brown ring-1 ring-brown"
                       : "border-gray-100"
                   } bg-white p-4 text-sm font-medium shadow-sm hover:border-gray-200`}
                 >
@@ -132,7 +132,7 @@ export default function Teams() {
                     <svg
                       className={
                         submissionStatusFilters === filter.value
-                          ? "h-5 w-5 text-orange-600"
+                          ? "h-5 w-5 text-brown"
                           : "hidden"
                       }
                       xmlns="http://www.w3.org/2000/svg"

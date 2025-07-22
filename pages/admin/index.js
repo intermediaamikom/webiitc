@@ -75,7 +75,7 @@ const LoginAdmin = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <Button disabled={isHitApi} color={"gradient2"}>
+        <Button disabled={isHitApi} color={"brown"}>
           {isHitApi ? (
             <AiOutlineLoading3Quarters className="text-white text-xl animate-spin" />
           ) : (

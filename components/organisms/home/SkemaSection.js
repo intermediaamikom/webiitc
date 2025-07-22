@@ -106,13 +106,13 @@ const SkemaSection = () => {
                       <p className="p-2 mb-10 text-sm  min-h-20 w-full rounded-lg border-2 border-orange-300 bg-orange-50 text-slate-900">
                         Pengerjaan sudah boleh dilakukan setelah tanggal
                         pendaftaran dibuka yaitu{" "}
-                        <span className="font-semibold text-oren">
-                          19 Agustus 2024
+                        <span className="font-semibold text-brown">
+                          1 Agustus 2025
                         </span>{" "}
                         sampai dengan sebelum akhir pengumpulan projek yaitu pada
                         tanggal <br />
-                        <span className="font-semibold text-oren">
-                          30 September 2024
+                        <span className="font-semibold text-brown">
+                          7 September 2025
                         </span>
                       </p>
                     </div>
@@ -139,9 +139,9 @@ const SkemaSection = () => {
                       mengikuti kegiatan lomba IIT Competition. Dalam berbagai
                       bidang lomba yang telah diikuti sudah memberikan
                       karya-karya terbaik yang luar biasa. Pengumuman pemenang
-                      akan diumumkan ketika awarding pada tanggal{" "}
-                      <span className="text-oren font-semibold">
-                        5 Oktober 2024.
+                      akan diumumkan secara offline ketika awarding pada tanggal{" "}
+                      <span className="text-brown font-semibold">
+                        27 September 2025.
                       </span>
                     </p>
                   }

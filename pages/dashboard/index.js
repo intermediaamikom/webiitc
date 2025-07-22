@@ -63,7 +63,7 @@ const DashboardUser = () => {
       <PopUp isModal={isPopUp} onClose={() => setIsPopUp(false)}>
         <div className="w-full flex flex-col items-center">
           <Image
-            src={"/images/LOGO/LOGOFIX2024.png"}
+            src={"/images/LOGO/logofix2025.png"}
             alt="logo iitc"
             width={1080}
             height={1080}
@@ -168,11 +168,11 @@ export const TeamCard = (props) => {
               </Text>
             </div>
           ) : (
-            <div className="px-4 py-2 bg-oren/10 rounded-full">
+            <div className="px-4 py-2 bg-brown/10 rounded-full">
               <Text
                 color={"text-black"}
                 size={"small"}
-                additionals={"text-oren"}
+                additionals={"text-brown"}
               >
                 Belum Submit
               </Text>
@@ -199,7 +199,7 @@ export const TeamCard = (props) => {
             </Text>
           </div>
         </div>
-        <div className="mt-3 text-oren font-bold">
+        <div className="mt-3 text-brown font-bold">
           <Link
             href={
               props.isAdmin
@@ -219,8 +219,8 @@ export const TeamCard = (props) => {
           </Text>
         </div>
       ) : (
-        <div className="px-4 py-2 bg-oren/10 rounded-full max-lg:hidden">
-          <Text color={"text-black"} size={"small"} additionals={"text-oren"}>
+        <div className="px-4 py-2 bg-brown/10 rounded-full max-lg:hidden">
+          <Text color={"text-black"} size={"small"} additionals={"text-brown"}>
             Belum Submit
           </Text>
         </div>

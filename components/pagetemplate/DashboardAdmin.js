@@ -79,7 +79,7 @@ const DashboardAdminTemplate = ({ title, children, props }) => {
               {isOpen ? (
                 <FiX className="text-2xl text-red" />
               ) : (
-                <GiHamburgerMenu className="text-2xl text-orange-500" />
+                <GiHamburgerMenu className="text-2xl text-brown" />
               )}
             </button>
           </div>
@@ -89,8 +89,8 @@ const DashboardAdminTemplate = ({ title, children, props }) => {
             } w-full lg:max-w-[250px] bg-white py-12 px-3 min-h-screen fixed flex flex-col items-center justify-start z-20`}
           >
             <Image
-              className="w-20 mx-auto lg:mx-0"
-              src={"/images/LOGO/LOGOFIX2024.png"}
+              className="w-28 mx-auto lg:mx-0"
+              src={"/images/LOGO/logofix2025.png"}
               alt="logo iitc"
               width={1080}
               height={1080}
@@ -106,9 +106,9 @@ const DashboardAdminTemplate = ({ title, children, props }) => {
                     href={href}
                     className={`${
                       pathname.startsWith(href)
-                        ? " text-orange-500 bg-orange-100  transition-all duration-200 ease-out"
+                        ? " text-brown bg-orange-100  transition-all duration-200 ease-out"
                         : ""
-                    } flex items-center gap-3 hover:text-orange-500  py-2 px-7 hover:bg-orange-100 rounded-xl  transition-all duration-200 ease-out`}
+                    } flex items-center gap-3 hover:text-brown  py-2 px-7 hover:bg-orange-100 rounded-xl  transition-all duration-200 ease-out`}
                   >
                     {label}
                   </Link>

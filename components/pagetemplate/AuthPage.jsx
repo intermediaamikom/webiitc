@@ -8,7 +8,7 @@ const AuthPage = ({ children, title, onSubmit, description }) => {
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" type="image/png" href="images/LOGO/LOGOFIX.png" />
+        <link rel="icon" type="image/png" href="images/LOGO/logofix2025.png" />
         <meta name="description" content={description} />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
@@ -16,7 +16,7 @@ const AuthPage = ({ children, title, onSubmit, description }) => {
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/rianmz-genz/webiitc/main/public/images/LOGO/LOGOFIX.png"
+          content="https://raw.githubusercontent.com/rianmz-genz/webiitc/main/public/images/LOGO/logofix2025.png"
         />
       </Head>
       <Container className="min-h-screen flex justify-center items-center">
@@ -25,8 +25,8 @@ const AuthPage = ({ children, title, onSubmit, description }) => {
             {children}
           </form>
           <div className="relative w-full md:w-[400px] h-full flex justify-center items-center p-2">
-            <div className="relative w-full min-h-[550px] bg-orange-600 bg-opacity-50 rounded-xl">
-              <div className="absolute bg-orange-500 w-full h-full -top-3 -right-3 overflow-hidden rounded-xl">
+            <div className="relative w-full min-h-[550px] bg-brown bg-opacity-50 rounded-xl">
+              <div className="absolute bg-yellow-600 w-full h-full -top-3 -right-3 overflow-hidden rounded-xl">
                 <Image
                   src="/images/bg-login.png"
                   alt="IIT Competition"
@@ -36,7 +36,7 @@ const AuthPage = ({ children, title, onSubmit, description }) => {
                 />
                 <div className="absolute top-0 text-white p-5">
                   <p className="font-bold uppercase text-xs mb-5">
-                    IIT COMPETITION 2024
+                    IIT COMPETITION 2025
                   </p>
                   <div className="text-white text-2xl md:text-3xl lg:text-4xl font-black">
                     Show your skills right now over here.

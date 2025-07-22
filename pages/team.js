@@ -383,7 +383,7 @@ const TeamPage = () => {
             File Project .zip
           </label> */}
           <div className="flex space-x-4 w-full mt-4">
-            <Button isSquare additionals={"w-full"} color={"oren"}>
+            <Button isSquare additionals={"w-full"} color={"brown"}>
               {isHitEdit ? (
                 <AiOutlineLoading3Quarters className="text-xl mx-auto text-white animate-spin" />
               ) : (
@@ -518,7 +518,7 @@ const TeamPage = () => {
             <li className="text-black/70">&gt;</li>
             <li className="text-black/70">Team</li>
             <li className="text-black/70">&gt;</li>
-            <li className="text-oren">{team.name ? team.name : email}</li>
+            <li className="text-brown">{team.name ? team.name : email}</li>
           </ul>
 
           {isHitCompetition ? (
@@ -611,7 +611,7 @@ const TeamPage = () => {
                     }
                   }}
                   isSquare
-                  color={"oren"}
+                  color={"brown"}
                   additionals={`w-full mt-3 ${team?.isActive === "PENDING" ? "bg-orange-300" : ""
                     }`}
                 >
@@ -680,7 +680,7 @@ const TeamPage = () => {
                       {isCsr && email == team?.leader?.email && (
                         <div className="mt-3 flex space-x-1">
                           <Button
-                            color={"oren"}
+                            color={"brown"}
                             size={"sm"}
                             isSquare
                             onClick={() => handlePopUpEdit()}
@@ -849,7 +849,7 @@ const MemberItem = ({ avatar, name, email, leaderEmail, onKick, onCert }) => {
         <Button
           additionals={"lg:w-[220px] max-lg:w-full max-lg:mt-3"}
           onClick={onCert}
-          color={"red"}
+          color={"brown"}
         >
           Cetak Sertifikat
         </Button>

@@ -60,8 +60,8 @@ const DashboardUserTemplate = ({ title, children }) => {
         >
           <Image
             onClick={() => router.push("/")}
-            className="w-24 cursor-pointer"
-            src={"/images/LOGO/LOGOFIX2024.png"}
+            className="w-32 cursor-pointer"
+            src={"/images/LOGO/logofix2025.png"}
             alt="logo iitc"
             width={1080}
             height={1080}
@@ -74,7 +74,7 @@ const DashboardUserTemplate = ({ title, children }) => {
                   href={item.url}
                   className={`${
                     item.url === pathname
-                      ? "text-orange-500 bg-orange-100 p-2 rounded-md"
+                      ? "text-brown bg-orange-100 p-2 rounded-md"
                       : "p-2"
                   } flex items-center gap-3`}
                 >

@@ -160,7 +160,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
               onClick={() => {
                 handleJoinIndividu();
               }}
-              color={"oren"}
+              color={"brown"}
             >
               Bergabung
             </Button>
@@ -184,7 +184,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
                 }}
                 isSquare
                 additionals={"w-full"}
-                color={"oren"}
+                color={"brown"}
               >
                 Buat
               </Button>
@@ -207,7 +207,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
               />
             </div>
             <div className="flex space-x-4 w-full">
-              <Button isSquare additionals={"w-full"} color={"oren"}>
+              <Button isSquare additionals={"w-full"} color={"brown"}>
                 {isHitJoinTeam ? (
                   <AiOutlineLoading3Quarters className="text-xl mx-auto animate-spin" />
                 ) : (
@@ -233,7 +233,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
               />
             </div>
             <div className="flex space-x-4 w-full">
-              <Button isSquare additionals={"w-full"} color={"oren"}>
+              <Button isSquare additionals={"w-full"} color={"brown"}>
                 {isHitJoin ? (
                   <AiOutlineLoading3Quarters className="text-xl mx-auto animate-spin" />
                 ) : (
@@ -263,7 +263,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
                 <li>/</li>
                 <li>Detail</li>
                 <li>/</li>
-                <li className="text-oren">{competition?.name}</li>
+                <li className="text-brown">{competition?.name}</li>
               </ul>
               <div className="flex justify-between items-start lg:flex-row flex-col">
                 <img
@@ -344,8 +344,8 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
                     Competition Information
                   </Text>
                   <div className="mt-4 flex items-center mb-8">
-                    <div className="border-oren border rounded-full p-3">
-                      <BsFillJournalBookmarkFill className="text-oren text-xl md:text-3xl" />
+                    <div className="border-brown border rounded-full p-3">
+                      <BsFillJournalBookmarkFill className="text-brown text-xl md:text-3xl" />
                     </div>
                     <div className="w-full ml-3">
                       <Text weight={"semi"} additionals={"text-xs md:text-xl"}>
@@ -356,7 +356,7 @@ const CompetitionDetails = ({ setIsCompetitionDetail, competitionSlug }) => {
                     <a
                       href={competition?.guideBookLink}
                       download
-                      className="bg-oren/10 text-oren px-4 text-xs font-semibold md:text-md py-2 hover:bg-orange-200 hover:text-orange-500 hover:px-3 hover:py-1.5 transition-all duration-200 rounded-full"
+                      className="bg-brown/10 text-brown px-4 text-xs font-semibold md:text-md py-2 hover:bg-orange-200 hover:text-orange-500 hover:px-3 hover:py-1.5 transition-all duration-200 rounded-full"
                     >
                       Download
                     </a>

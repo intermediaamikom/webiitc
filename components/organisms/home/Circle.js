@@ -39,7 +39,7 @@ function Circle({ date, currentPercentage, modalContent, importantDates }) {
   return (
     <div
       className={`absolute flex  w-4 h-4 ${
-        currentPercentage >= percentage ? "bg-oren" : "bg-slate-800"
+        currentPercentage >= percentage ? "bg-[#FCEFCB]" : "bg-slate-800"
       } rounded-full flex items-center  justify-center lg:cursor-pointer`}
       style={{ marginLeft: `${percentage}%` }}
       onMouseEnter={handleMouseEnter}

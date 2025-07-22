@@ -85,7 +85,7 @@ const Login = () => {
         </Text>
         <Text additionals={"mb-4 mt-2"}>
           Belum memiliki akun?
-          <Link href={"/signup"} className="text-oren hover:underline ml-1">
+          <Link href={"/signup"} className="text-brown hover:underline ml-1">
             Daftar
           </Link>
         </Text>
@@ -107,14 +107,14 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <Button disabled={isHitApi} color={"gradient2"}>
+        <Button disabled={isHitApi} color={"brown"}>
           {isHitApi ? (
             <AiOutlineLoading3Quarters className="text-white text-xl animate-spin" />
           ) : (
             "Submit"
           )}
         </Button>
-        <Link href={'/forgot-password'}><Text className="pt-5 text-oren hover:underline">Lupa password?</Text></Link>
+        <Link href={'/forgot-password'}><Text className="pt-5 text-brown hover:underline">Lupa password?</Text></Link>
       </AuthPage>
     </div>
   );

@@ -317,7 +317,7 @@ function Profile() {
                   onError={handleFileError}
                 />
               </div>
-              <div className="p-3 border rounded-lg my-3 flex justify-start items-center border-orange-500 bg-orange-50 text-orange-500 font-medium ">
+              <div className="p-3 border rounded-lg my-3 flex justify-start items-center border-brown bg-orange-50 text-brown font-medium ">
                 kolom dengan tanda
                 <span className="text-rose-600 mx-1 font-bold  bg-orange-100 rounded w-1 p-1 flex items-center justify-center h-1">
                   *
@@ -336,7 +336,7 @@ function Profile() {
                   disabled={!name || simpan}
                   className={`py-2 px-4 rounded-md text-white flex justify-center items-center font-semibold ${
                     name && !simpan
-                      ? "bg-orange-500 hover:bg-orange-600"
+                      ? "bg-brown hover:bg-orange-600"
                       : "bg-orange-700 cursor-not-allowed py-2 px-4 w-24"
                   }`}
                 >

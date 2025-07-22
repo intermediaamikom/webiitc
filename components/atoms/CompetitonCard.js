@@ -79,8 +79,8 @@ const CompetitonCard = ({
 
       {isPopup && (
         <div className="absolute z-50 left-0 top-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center text-white text-lg font-medium">
-          <div className="bg-orange-500 px-2 py-1 rounded-lg">
-            Event telah selesai
+          <div className="bg-brown px-2 py-1 rounded-lg">
+            Event belum dimulai
           </div>
         </div>
       )}

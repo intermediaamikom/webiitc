@@ -15,6 +15,7 @@ const Button = ({ color, size, additionals, isSquare = false, ...props }) => {
         silver: "bg-silver/20 text-black",
         white: "bg-white text-softyellow hover:bg-kuning hover:text-white",
         orentransparent: "bg-oren/10 text-oren hover:shadow-lg",
+        brown: "bg-[#E9A319] py-2 text-white hover:scale-95 ttransition-all duration-300",
         oren: "bg-orange-500 py-2  text-white  hover:scale-95 ttransition-all duration-300",
         dark: "bg-slate-800  text-white hover:scale-95 ttransition-all duration-300",
         green: "bg-green-400/20 text-green-400",
@@ -39,7 +40,7 @@ const Button = ({ color, size, additionals, isSquare = false, ...props }) => {
   );
 };
 Button.defaultProps = {
-  color: "oren",
+  color: "brown",
   size: "md",
 };
 export default Button;

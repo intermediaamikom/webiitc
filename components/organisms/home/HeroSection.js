@@ -29,13 +29,13 @@ const HeroSection = () => {
             }}
             className="font-black sm:min-w-[400px] text-center md:text-start text-slate-800 z-10 text-4xl md:text-3xl lg:text-5xl leading-10 w-11/12  md:w-6/12"
           >
-            <div className=" text-center text-xs mx-auto md:mx-0 mb-5  w-fit px-3 border border-orange-500 py-1 rounded-full text-orange-500 bg-orange-100">
+            <div className=" text-center text-xs mx-auto md:mx-0 mb-5  w-fit px-3 border border-[#E9A319] py-1 rounded-full text-[#E9A319] bg-white">
               National IT Competition
             </div>
             Tunjukan pada{" "}
             <p className="md:my-5">
               Dunia{" "}
-              <span className="text-transparent bg-gradient-to-tr from-orange-500 to bg-yellow-300 bg-clip-text">
+              <span className="text-transparent bg-gradient-to-tr from-[#A86523] to bg-[#E9A319] bg-clip-text">
                 Bahwa Kamu
               </span>{" "}
             </p>
@@ -51,7 +51,7 @@ const HeroSection = () => {
             </Text>
             <div className="flex items-center justify-center md:justify-start gap-x-3">
               <Link href={"/signup"}>
-                <Button color={"oren"} additionals={"text-[20px] lg:py-3"}>
+                <Button additionals={"text-[20px] lg:py-3"}>
                   Daftar Sekarang
                 </Button>
               </Link>
@@ -72,7 +72,7 @@ const HeroSection = () => {
               className="hidden md:block md:w-7/12 md:bg-contain  self-start w-full object-cover bg-red-500 -ml-5 lg:-ml-0 lg:-mr-44"
             >
               <Image
-                src={"/images/bannerIitc.png"}
+                src={"/images/LOGO/logofix2025.png"}
                 alt="Gambar Tunjukan Skill"
                 width={1080}
                 height={1080}

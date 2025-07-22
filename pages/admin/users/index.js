@@ -14,8 +14,12 @@ import { PopUp } from "@/components/organisms/details/CompetitionDetails";
 import Text from "@/components/atoms/Text";
 import { Button } from "@/components";
 import DeleteUserApi from "@/api/user/Delete";
+import Cookies from "js-cookie";
+import { useRouter } from "next/router";
+
 
 export default function Users() {
+  const router = useRouter();
   const [isHitApi, setIsHitApi] = useState(false);
   const [isHitDelete, setIsHitDelete] = useState(false);
   const [fromApi, setFromApi] = useState([]);
@@ -61,6 +65,13 @@ export default function Users() {
       selector: (row) => row.action,
     },
   ];
+
+  useEffect(() => {
+    const token = Cookies.get("adminKey");
+    if(!token){
+      router.push("/admin");
+    }
+  }, [])
 
   useEffect(() => {
     getUsers();

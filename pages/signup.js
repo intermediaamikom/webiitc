@@ -151,7 +151,7 @@ const Signup = () => {
         </Text>
         <Text additionals={"mb-4 mt-2"}>
           Sudah memiliki akun?
-          <Link href={"/login"} className="text-oren hover:underline ml-1">
+          <Link href={"/login"} className="text-brown hover:underline ml-1">
             Masuk
           </Link>
         </Text>
@@ -200,7 +200,7 @@ const Signup = () => {
         </div>
         <Button
           disabled={false}
-          color={"gradient2"}
+          color={"brown"}
           // additionals={"cursor-no-drop"}
         >
           {isHitApi ? (

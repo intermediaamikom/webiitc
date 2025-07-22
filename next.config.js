@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["via.placeholder.com"],
+    unoptimized: true, 
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production", // Hanya nonaktifkan log di production
